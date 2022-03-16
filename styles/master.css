@@ -1,10 +1,203 @@
+/* CSS GENERALES */
+
+/* Estilos base */
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Cuerpo */
+body {
+    background-color: #ffffff;
+}
+
+/* Hijos del cuerpo */
 body>* {
-    max-width: 1250px;
+    background-color: #ffffff;
+    width: 1252px;
     margin: 0 auto;
+}
+
+
+/* SECCIÓN DEL HEADER */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 900;
+    height: 115px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+}
+
+.header-container {
+    width: 1252px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding-left: 118px;
+    font-size: 1.5em;
+    background: -webkit-linear-gradient(0, #3b5bd9, #2444c2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-container nav {
+    padding-right: 118px;
+}
+
+.header-container ul {
+    display: flex;
+    width: 622px;
+    justify-content: space-between;
+}
+
+.menu-item {
+    color: #6d7b93;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.menu-item.button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 14px 24px;
+    border-radius: 4px;
+    background: linear-gradient(to bottom right, #3b5bd9, #2444c2);
+    box-shadow: 0 14px 10px -5px #3252d044;
+}
+
+
+/* SECCIÓN DEL MAIN */
+.main-section {
+    display: grid;
+    grid-template-columns: 626px 1fr;
+    grid-template-rows: 1fr 292px;
+    grid-template-areas: 
+    "left right"
+    "bottom bottom";
+}
+
+/* Sección izquierda */
+.main-left {
+    grid-area: left;
+    font-family: 'Montserrat',
+    sans-serif;
+
+    margin-top: 180px;
+    padding: 0 100px 0 118px;
+    height: 690px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-content {
+    margin-bottom: 46px;
+}
+
+.main-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -2px;
+    color: #1f3e72;
+    font-size: 3.4em;
+    line-height: 65px;
+    margin-bottom: 24px;
+}
+
+.main-content p {
+    width: 350px;
+    color: #6d7b93;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.main-insights {
+    display: flex;
+    justify-content: space-around;
+    color: #1f3e72;
+    font-weight: 600;
+    font-size: .8em;
+    width: 90%;
+    margin-bottom: 150px;
+}
+
+.card-title {
+    color: #1f3e72;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.card {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    width: 762px;
+    padding: 40px 40px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 42px 50px -32px #2b74fd44;
+}
+
+.card-subtitle {
+    color: #6d7b93;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.card>div>p>strong {
+    font-family: 'Montserrat', sans-serif;
+    color: #1f3e72;
+    font-size: 1.2em;
+}
+
+.card input {
+    font-family: 'Montserrat',
+    sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 14px 46px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(to bottom right, #3b5bd9, #2444c2);
+    box-shadow: 0 14px 10px -5px #3252d044;
+}
+
+/* Sección derecha */
+.main-image {
+    grid-area: right;
+    display: flex;
+}
+
+.main-image img {
+    width: 100%;
+    object-fit: cover;
+} 
+
+/* Sección inferior */
+.vaccines {
+    grid-area: bottom;
+    content: url(../resources/vaccines.jpg);
+    width: 100%;
+    object-fit: cover;
 }
