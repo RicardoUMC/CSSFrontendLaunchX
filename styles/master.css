@@ -12,7 +12,26 @@ ul {
 }
 
 a {
+    color: #6d7b93;
     text-decoration: none;
+}
+
+p, small {
+    color: #6d7b93;
+    font-weight: 500;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #1f3e72;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2, h5 {
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2.1em;
 }
 
 /* Cuerpo */
@@ -27,6 +46,15 @@ body>* {
     margin: 0 auto;
 }
 
+.vaccination-gradient {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    background: -webkit-linear-gradient(0, #3b5bd9, #2444c2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 /* SECCIÓN DEL HEADER */
 header {
@@ -39,7 +67,7 @@ header {
     backdrop-filter: blur(10px);
 }
 
-.header-container {
+div.header-container {
     width: 1252px;
     height: 100%;
     margin: 0 auto;
@@ -48,33 +76,26 @@ header {
     justify-content: space-between;
 }
 
-.header-container p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+div.header-container p {
     padding-left: 118px;
-    font-size: 1.5em;
-    background: -webkit-linear-gradient(0, #3b5bd9, #2444c2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
-.header-container nav {
-    padding-right: 118px;
+div.header-container nav {
+    padding-right: 118px;   
 }
 
-.header-container ul {
+div.header-container ul {
     display: flex;
     width: 622px;
     justify-content: space-between;
 }
 
-.menu-item {
-    color: #6d7b93;
+a.menu-item {
     font-size: 1em;
     font-weight: 600;
 }
 
-.menu-item.button {
+a.menu-item.button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #ffffff;
@@ -86,7 +107,7 @@ header {
 
 
 /* SECCIÓN DEL MAIN */
-.main-section {
+main.main-section {
     display: grid;
     grid-template-columns: 626px 1fr;
     grid-template-rows: 1fr 292px;
@@ -96,7 +117,7 @@ header {
 }
 
 /* Sección izquierda */
-.main-left {
+div.main-left {
     grid-area: left;
     font-family: 'Montserrat',
     sans-serif;
@@ -109,11 +130,11 @@ header {
     justify-content: center;
 }
 
-.main-content {
+div.main-content {
     margin-bottom: 46px;
 }
 
-.main-content h1 {
+div.main-content h1 {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: -2px;
     color: #1f3e72;
@@ -122,31 +143,34 @@ header {
     margin-bottom: 24px;
 }
 
-.main-content p {
+div.main-content p {
     width: 350px;
-    color: #6d7b93;
     font-weight: 500;
     line-height: 27px;
 }
 
-.main-insights {
+div.main-insights {
     display: flex;
     justify-content: space-around;
-    color: #1f3e72;
     font-weight: 600;
     font-size: .8em;
     width: 90%;
     margin-bottom: 150px;
 }
 
-.card-title {
+div.main-insights p {
+    font-weight: 600;
+    color: #1f3e72;
+}
+
+h4.card-title {
     color: #1f3e72;
     font-size: 1.2em;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
-.card {
+div.card {
     position: relative;
     z-index: 100;
     display: flex;
@@ -159,19 +183,19 @@ header {
     box-shadow: 0 42px 50px -32px #2b74fd44;
 }
 
-.card-subtitle {
+p.card-subtitle {
     color: #6d7b93;
     font-size: 1.2em;
     font-weight: 500;
 }
 
-.card>div>p>strong {
+div.card>div>p>strong {
     font-family: 'Montserrat', sans-serif;
     color: #1f3e72;
     font-size: 1.2em;
 }
 
-.card input {
+div.card input {
     font-family: 'Montserrat',
     sans-serif;
     font-weight: 500;
@@ -184,20 +208,30 @@ header {
 }
 
 /* Sección derecha */
-.main-image {
+figure.main-image {
     grid-area: right;
     display: flex;
 }
 
-.main-image img {
+figure.main-image img {
     width: 100%;
     object-fit: cover;
 } 
 
 /* Sección inferior */
-.vaccines {
+figure.vaccines {
     grid-area: bottom;
     content: url(../resources/vaccines.jpg);
     width: 100%;
     object-fit: cover;
+}
+
+
+/* SECCIÓN DE LOS BENEFICIOS */
+div.justification-container {
+    padding: 0 118px;
+}
+
+section.justification-section h2 {
+    font-weight: 800;
 }
