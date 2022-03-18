@@ -18,7 +18,7 @@ a {
 
 p, small {
     color: #6d7b93;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h2, h3, h4, h5, h6 {
@@ -56,7 +56,7 @@ body>* {
 
 .vaccination-gradient {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 1.5em;
     background: -webkit-linear-gradient(0, #3b5bd9, #2444c2);
     -webkit-background-clip: text;
@@ -409,7 +409,6 @@ div.media-body p {
 }
 
 div.media-body small {
-    font-weight: 600;
     font-size: 12px;
 }
 
@@ -422,11 +421,72 @@ div.media button {
     color: #3151cf;
     border: none;
     border-radius: 4px;
-    background: #f1f5ff;
+    background-color: #f1f5ff;
 }
 
 div.media button:hover {
     color: #ffffff;
     background: linear-gradient(to bottom right, #3757d5, #2646c4);
     box-shadow: 0 14px 10px -5px #3252d044;
+}
+
+
+/* SECCIÓN DEL FOOTER */
+footer {
+    width: 100%;
+    background-color: #eef3ff;
+}
+
+div.footer-container {
+    width: 1252px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+div.grid-footer {
+    padding: 0 118px;
+    padding-top: 54px;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 101px);
+    gap: 78px;
+    margin-bottom: 45px;
+}
+
+div.vaccination-footer p {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    width: 150px;
+}
+
+div.columns-footer h5 {
+    font-size: 18px;
+}
+
+div.columns-footer ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 18px;
+}
+
+div.columns-footer ul li {
+    margin: 10px 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+div.flex-footer {
+    padding: 0 118px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+div.flex-footer ul {
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    width: 255px;
 }
