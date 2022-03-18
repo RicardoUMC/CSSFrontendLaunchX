@@ -31,15 +31,14 @@ h2, h5 {
 }
 
 h2 {
+    margin-bottom: 30px;
     font-size: 2.1em;
 }
 
-/* Cuerpo */
 body {
     background-color: #ffffff;
 }
 
-/* Hijos del cuerpo */
 body>* {
     background-color: #ffffff;
     width: 1252px;
@@ -228,10 +227,60 @@ figure.vaccines {
 
 
 /* SECCIÓN DE LOS BENEFICIOS */
-div.justification-container {
-    padding: 0 118px;
+section.justification-section {
+    margin-bottom: 160px;
 }
 
 section.justification-section h2 {
     font-weight: 800;
+}
+
+div.justification-container {
+    padding: 0 118px;
+}
+
+div.justification-container>p {
+    width: 460px;
+    line-height: 28px;
+}
+
+div.grid-benefits {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+    width: 100%;
+}
+
+div.benefits {
+    display: inherit;
+    flex-direction: column;
+    width: 184px;
+    height: 246px;
+    padding: 25px;
+
+    border-radius: 5px;
+    box-shadow: 0 0 10px #3252d010;
+}
+
+div.benefits:hover {
+    box-shadow: 0 14px 20px #3252d022;
+    transform: scale(1.01);
+}
+
+div.benefits p.benefit-title {
+    margin-top: 74px;
+    color: #1f3e72;
+    font-weight: 600;
+    font-size: 18px;
+    width: 166px;
+    line-height: 22px;
+    letter-spacing: 0.3px;
+}
+
+div.benefits p.benefit-description {
+    width: 100%;
+    margin-top: 16px;
+    font-size: 12.5px;
+    letter-spacing: -0.2px;
+    line-height: 21px;
 }
