@@ -18,6 +18,13 @@ a {
 
 p, small {
     color: #6d7b93;
+}
+
+p {
+    font-weight: 500;
+}
+
+small {
     font-weight: 600;
 }
 
